@@ -1,6 +1,6 @@
 # Vanity-Number-Project
 This project entailed creating a Lambda function that converts phone numbers to vanity numbers and then saving them in a DynamoDB table. 
-Then, a call flow is formalised on Amazon connect.
+Then, a contract flow is formalised on Amazon connect.
 In this documentation, I will frstly focus on the code, then the Lambda function and then the Amazon Connect.
 
 code:
@@ -15,12 +15,12 @@ If I had more time, I would:
 
 Lambda Function:
 I was able to run a complete function with the code written whilst also transferring the output 'VNumber' into a key/value DynamoDB table.
-Furthermore, I established a connection between the function and my call flow line number in Amazon Connect.
+Furthermore, I established a connection between the function and my contract flow line number in Amazon Connect.
 Initially, I was prevented from running the function due to access denial to DynamoDB. I had to access IAM and assign a DynamoDB role to the Lambda function.
 
 Amazon Connect:
-I managed to create a call flow which relayed an automated voice message. It is supposed to relay the vanity number of the incoming caller (variable labelled "VNumber").
+I managed to create a contract flow which relayed an automated voice message. It is supposed to relay the vanity number of the incoming caller (variable labelled "VNumber").
 Number: +442080686657
 If I had more time I would:
 1) Incorporate a method of relaying the vanity number back to the caller.
-2) Add some extra features to the call flow to increase the complexity.
+2) Add some extra features to the contract flow to increase the complexity.
