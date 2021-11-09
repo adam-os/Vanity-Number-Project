@@ -9,7 +9,7 @@ The decision to go with a for loop was due to its simplicity. I was able to succ
 Initially, I struggled getting the right concept for the code but I chose a simplistic loop due to ease and swift malleability of the code. 
 If I had more time, I would:
 1) Add iteration to code so as to produce a number of possibilities instantly for one number. That way, I could pick the best 5 vanity numbers.
-2) Utilise an external dictionary of words which would narrow the randon fuction to pick from a list of possible outcoumes. 
+2) Utilise an external dictionary of words which would narrow the random fuction to pick from a list of possible outcoumes. 
    This is because the 'best' vanity numbers are those that are easy to remember and recall. 
 3) Make use of more error handling. Although I did do some incremental small tests to ensure that my code was sound,
    more usage of error handling and troubleshooting would be necessary when dealing with a client's product.
