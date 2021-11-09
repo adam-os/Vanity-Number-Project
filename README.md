@@ -3,7 +3,8 @@ This project entailed creating a Lambda function that converts phone numbers to 
 Then, a contract flow is formalised on Amazon connect.
 In this documentation, I will frstly focus on the code, then the Lambda function and then the Amazon Connect.
 
-code:
+Code:
+
 The decision to go with a for loop was due to its simplicity. I was able to succcessfully convert each digit in a phone to a corresponding letter randomised letter.
 Initially, I struggled getting the right concept for the code but I chose a simplistic loop due to ease and swift malleability of the code. 
 If I had more time, I would:
@@ -14,11 +15,13 @@ If I had more time, I would:
    more usage of error handling and troubleshooting would be necessary when dealing with a client's product.
 
 Lambda Function:
+
 I was able to run a complete function with the code written whilst also transferring the output 'VNumber' into a key/value DynamoDB table.
 Furthermore, I established a connection between the function and my contract flow line number in Amazon Connect.
 Initially, I was prevented from running the function due to access denial to DynamoDB. I had to access IAM and assign a DynamoDB role to the Lambda function.
 
 Amazon Connect:
+
 I managed to create a contract flow which relayed an automated voice message. It is supposed to relay the vanity number of the incoming caller (variable labelled "VNumber").
 Number: +442080686657
 If I had more time I would:
